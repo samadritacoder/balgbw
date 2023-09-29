@@ -12,7 +12,16 @@ function App() {
   const handleSubmit = ()=>{
    axios.post('http://localhost:3001/login',{email,password}).then((res)=>{
     console.log(res);
+
+    if (res.data.succes) {
+      alert("login lowra")
+    }else{
+      alert('lobs')
+    }
+    
    
+   }).catch(error => {
+    console.log(error);
    })
   }
   return (

@@ -23,7 +23,6 @@ const name = [
     }
 ]
 
-gfhgj
 
 
 app.post("/login", cors(), (req,res)=>{
@@ -45,7 +44,7 @@ app.post("/login", cors(), (req,res)=>{
     }
 })
 
-app.listen(3000,()=>{
+app.listen(3001,()=>{
     console.log('app is running');
 })
 
